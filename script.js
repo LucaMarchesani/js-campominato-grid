@@ -6,7 +6,7 @@
 // Ad esempio:
 // Di cosa ho bisogno per generare i numeri?
 // Proviamo sempre prima con dei console.log() per capire se stiamo ricevendo i dati giusti.
-// Le validazioni e i controlli possiamo farli anche in un secondo momento.
+// Le validazioni e i controlli possiamo farli anche in un secondo momento..
 
 const inputButton = document.getElementById('btn');
 const divGridElement = document.querySelector('div.grid');
