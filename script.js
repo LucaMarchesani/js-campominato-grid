@@ -11,9 +11,13 @@
 const inputButton = document.getElementById('btn');
 const divGridElement = document.querySelector('div.grid');
 
+divGridElement.classList.remove('active');
 
+inputButton.addEventListener('click', function(){
+    divGridElement.classList.add('active');
+})
 
-for (let i = 1; i < 101; i++) {
+for (let i = 1; i <= 100; i++) {
 
     const newSquare = document.createElement('div');
 
@@ -21,11 +25,13 @@ for (let i = 1; i < 101; i++) {
     newSquare.innerText = i;
 
     divGridElement.appendChild(newSquare);
-
     newSquare.addEventListener('click', function(){
-        newSquare.classList.toggle('clicked')
+        newSquare.classList.toggle('clicked');
     })
 }
+
+
+
 
 
 

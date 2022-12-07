@@ -53,12 +53,17 @@ main{
 }
 
 div.grid{
+    display: none;
     flex-wrap: wrap;
     margin: 0 auto;
     width: 430px;
     height: 430px;
     border: 2px solid magenta;
     cursor: crosshair;
+}
+
+div.grid.active{
+    display: flex;
 }
 
 div.square{
